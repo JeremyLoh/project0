@@ -1,0 +1,8 @@
+/*
+CSS stylesheet for all .html files
+Responsive web design: https://www.w3schools.com/Css/css_rwd_intro.asp
+*/
+.blockquote {
+  font-size: 26px;
+  font-weight: 400;
+}
