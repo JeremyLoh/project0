@@ -2,7 +2,31 @@
 CSS stylesheet for all .html files
 Responsive web design: https://www.w3schools.com/Css/css_rwd_intro.asp
 */
-.blockquote {
-  font-size: 26px;
+.quote blockquote {
+  padding-top: 2%;
+  padding-bottom: 5%;
   font-weight: 400;
+  font-size: 30px;
+}
+
+/* For medium devices */
+@media (min-width: 768px) {
+  .carousel_size {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .quote blockquote {
+    font-size: 35px;
+  }
+}
+
+/* For Large devices (laptops/desktops) */
+@media (min-width: 992px) {
+  .carousel_size {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .quote blockquote {
+    font-size: 42px;
+  }
 }
