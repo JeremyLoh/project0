@@ -2,11 +2,46 @@
 CSS stylesheet for all .html files
 Responsive web design: https://www.w3schools.com/Css/css_rwd_intro.asp
 Container flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+Centering stuff: https://medium.freecodecamp.org/how-to-center-things-with-style-in-css-dc87b7542689
 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#body_content {
+  min-height: 100%;
+  position: relative;
+}
+/* Footer CSS styles */
+#footer {
+  position: absolute;
+  left: 0;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 100%; 
+}
+#footer p {
+  display: inline-block;
+  font-family: 'Open Sans', Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.icon {
+  display: inline-block;
+  height: 40px;
+}
+#footer_content {
+  text-align: center;
+}
+
 .section_heading {
   text-align: center;
   margin-bottom: 30px;
   font-size: 70px;
+  font-family: 'Open Sans', Helvetica;
+  font-weight: 200;
 }
 
 .quote blockquote {
@@ -16,7 +51,6 @@ Container flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexb
   font-size: 30px;
 }
 
-/* Image container */
 .image_container {
   display: flex;
   flex-wrap: wrap;
@@ -26,12 +60,9 @@ Container flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexb
   align-content: space-around;
 }
 
-/* 
-Image column (3 images on one row)
-*/
 .image_col {
   margin-bottom: 5%;
-  flex-basis: 30%;
+  flex-basis: 45%;
 }
 
 /* For Small devices */
@@ -53,11 +84,17 @@ Image column (3 images on one row)
   .quote blockquote {
     font-size: 35px;
   }
+  .section_heading {
+    font-size: 90px;
+  }
 }
 
 /* For Large devices (laptops/desktops) */
 @media (min-width: 992px) {
   .quote blockquote {
     font-size: 42px;
+  }
+  .section_heading {
+    font-size: 100px;
   }
 }
