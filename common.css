@@ -1,8 +1,14 @@
 /*
 CSS stylesheet for all .html files
+
 Responsive web design: https://www.w3schools.com/Css/css_rwd_intro.asp
+
 Container flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+
 Centering stuff: https://medium.freecodecamp.org/how-to-center-things-with-style-in-css-dc87b7542689
+
+Color: Monokai theme
+  https://color.adobe.com/Monokai-color-theme-1855832/
 */
 html, body {
   margin: 0;
@@ -13,7 +19,7 @@ html, body {
   min-height: 100%;
   position: relative;
 }
-/* Footer CSS styles */
+/* General Footer CSS styles */
 #footer {
   position: absolute;
   left: 0;
@@ -36,10 +42,74 @@ html, body {
   text-align: center;
 }
 
+/* book.html styles */
+.title {
+  font-weight: 700;
+  font-family: 'Open Sans', Helvetica;
+  font-size: 35px;
+  padding-left: 15px;
+}
+
+.author {
+  font-weight: 300;
+  font-family: 'Open Sans', Helvetica;
+  font-size: 25px;
+  position: relative;
+  right: -10%;
+  color: #252525;
+}
+
+.text_hover:hover, #book_list a:hover {
+  color: #f22987;
+}
+
+#book_1, #book_2, #book_3 {
+  margin: 10%;
+}
+/* Format book cover pictures in book.html */
+.book_cover {
+  /* Center the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  /* 
+  Make image responsive (default values) 
+  (for bigger screens, different width and height through media queries
+  */
+  width: 50%;
+  height: 50%;
+}
+
+/* Navigation of book titles in book.html */
+#book_list li {
+  font-family: 'Open Sans', Helvetica;
+  font-size: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 5%;
+}
+
+#book_list li:hover {
+  color: #f22987;
+  transform: scale(1.08);
+  margin-left: 12%;
+}
+
+#book_list a:hover {
+  color: #f22987;
+  transform: scale(1.08);
+}
+
+#book_list a {
+  text-decoration: none;
+  color: black;
+}
+
 .section_heading {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 70px;
+  font-size: 45px;
   font-family: 'Open Sans', Helvetica;
   font-weight: 200;
 }
@@ -51,6 +121,7 @@ html, body {
   font-size: 30px;
 }
 
+/* For image layout in photography.html */
 .image_container {
   display: flex;
   flex-wrap: wrap;
@@ -87,6 +158,10 @@ html, body {
   .section_heading {
     font-size: 90px;
   }
+  .book_cover {
+    width: 40%;
+    height: auto;
+  }
 }
 
 /* For Large devices (laptops/desktops) */
@@ -96,5 +171,9 @@ html, body {
   }
   .section_heading {
     font-size: 100px;
+  }
+  .book_cover {
+    width: 30%;
+    height: auto;
   }
 }
