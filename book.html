@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="common.css">
     <!-- Link to section heading font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Link to quotes font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Name tab portion of webpage -->
     <title> Book </title>
   </head>
@@ -56,7 +58,7 @@
       Add list (for navigation) of book recommendation information
       Consists of brief summary, Quotes, price and link to buy the book
       -->
-      <div class="section_heading">Book Recommendations</div>
+      <div class="section_heading book_recommendation">Book Recommendations</div>
       <ol id="book_list">
         <li><a href="#book_1">A Confession</a></li>
         <li><a href="#book_2">The Hitchhiker's Guide to the Galaxy</a></li>
@@ -81,7 +83,9 @@
             For man to be able to live he must either not see the infinite, or have such an explanation of the meaning of life as will connect the finite with the infinite.
         </p>
         <!--Purchase link-->
-        <a class="purchase_link" href="https://www.bookdepository.com/Confession-Leo-Tolstoy/9780141036694?ref=grid-view&qid=1545022188098&sr=1-2" target="_blank">Buy</a>
+        <a href="https://www.bookdepository.com/Confession-Leo-Tolstoy/9780141036694?ref=grid-view&qid=1545022188098&sr=1-2" target="_blank">
+          <button class="purchase_button">Buy</button>
+        </a>
       </div>
       
       <div id="book_2">
@@ -94,20 +98,24 @@
         <p class="book_summary">
           On 12 October 1979 the most remarkable book ever to come out of the great publishing corporations of Ursa Minor (and Earth) was made available to humanity—The Hitchhiker’s Guide to the Galaxy.
           <br>
-          It’s an ordinary Thursday lunchtime for Arthur Dent until his house gets demolished. The Earth follows shortly afterwards, to make way for a new hypersapce bypass, and his best friend has just announced that he’s an alien. At this moment, they’re hurtling through space with nothing but their towels and an innocuous-looking book inscribed with the big, friendly words: <br> <span class="text_hover">DON’T PANIC</span>.
+          It’s an ordinary Thursday lunchtime for Arthur Dent until his house gets demolished. The Earth follows shortly afterwards, to make way for a new hypersapce bypass, and his best friend has just announced that he’s an alien. At this moment, they’re hurtling through space with nothing but their towels and an innocuous-looking book inscribed with the big, friendly words: 
+          <br> 
+          <span class="text_hover">DON’T PANIC</span>.
         </p>
         <!-- Quotes -->
         <p class="book_quote">
           Now it is such a bizarrely improbable coincidence that anything so mind-bogglingly useful could have evolved purely by chance that some thinkers have chosen to see it as the final and clinching proof of the non-existence of God.
           The argument goes something like this: "I refuse to prove that I exist,'" says God, "for proof denies faith, and without faith I am nothing."
-          <br>
+          <br><br>
           "But," says Man, "The Babel fish is a dead giveaway, isn't it? It could not have evolved by chance. It proves you exist, and so therefore, by your own arguments, you don't. QED."
           "Oh dear," says God, "I hadn't thought of that," and promptly vanishes in a puff of logic.
-          <br>
+          <br><br>
           "Oh, that was easy," says Man, and for an encore goes on to prove that black is white and gets himself killed on the next zebra crossing.
         </p>
         <!--Purchase link-->
-        <a class="purchase_link" href="https://www.bookdepository.com/Hitchhikers-Guide-Galaxy-Douglas-Adams/9781509860142?ref=grid-view&qid=1545022873010&sr=1-6" target="_blank">Buy</a>
+        <a href="https://www.bookdepository.com/Hitchhikers-Guide-Galaxy-Douglas-Adams/9781509860142?ref=grid-view&qid=1545022873010&sr=1-6" target="_blank">
+          <button class="purchase_button">Buy</button>
+        </a>
       </div>
       
       <div id="book_3">
@@ -125,14 +133,20 @@
           I wanted to build something that was my own, something I could point to and say: I made that. It was the only way I saw to make life meaningful.
         </p>
         <!--Purchase link-->
-        <a class="purchase_link" href="https://www.bookdepository.com/Shoe-Dog-Phil-Knight/9781471146725?ref=grid-view&qid=1545024074353&sr=1-1" target="_blank">Buy</a>
+        <a href="https://www.bookdepository.com/Shoe-Dog-Phil-Knight/9781471146725?ref=grid-view&qid=1545024074353&sr=1-1" target="_blank">
+          <button class="purchase_button">Buy</button>
+        </a>
       </div>
 
       <div id="footer">
           <div id="footer_content">
             <p>Jeremy Loh</p>
             <a href="https://www.instagram.com/Jeremy_Loh" target="_blank">
-              <img class="icon" src="images/icons/instagram_icon.png" alt="Instagram icon">
+              <img class="icon" src="images/icons/instagram_icon.png" alt="Instagram icon that redirects to Jeremy_Loh's account">
+            </a>
+            <!--Add Goodreads link-->
+            <a href="https://www.goodreads.com/jeremy_loh" target="_blank">
+              <img class="icon" src="images/icons/goodreads.png" alt="Goodreads icon that redirects to Jeremy_Loh's account">
             </a>
           </div>
       </div>

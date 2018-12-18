@@ -19,6 +19,10 @@ html, body {
   min-height: 100%;
   position: relative;
 }
+a:hover, button:hover {
+  cursor: pointer;
+}
+
 /* General Footer CSS styles */
 #footer {
   position: absolute;
@@ -41,13 +45,31 @@ html, body {
 #footer_content {
   text-align: center;
 }
+#footer_content img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#footer_content a {
+  /* Remove any text decoration present */
+  text-decoration: none !important;
+}
 
 /* book.html styles */
+.book_recommendation::before {
+  /* Add unicode character for book */
+  display: block;
+  content: "\1F56E";
+  font-size: 150px;
+}
+
 .title {
+  display: inline-block;
   font-weight: 700;
   font-family: 'Open Sans', Helvetica;
   font-size: 35px;
-  padding-left: 15px;
+  padding: 5px 15px 5px 15px;
+  background-color: #A37Ef2;
+  width: auto;
 }
 
 .author {
@@ -79,6 +101,59 @@ html, body {
   */
   width: 50%;
   height: 50%;
+}
+
+/* Purchase link for books */
+.purchase_button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  width: 100px;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans', Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #f22987;
+  text-align: center;
+  transition: all 0.2s;
+}
+.purchase_button:hover {
+  background-color: #6be5f2;
+}
+
+/* Book summary paragraph */
+.book_summary {
+  line-height: 2;
+  font-size: 22px;
+  font-family: 'Open Sans', Helvetica;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Book quote style */
+.book_quote {
+  padding: 0px 30px 40px 30px;
+  font-size: 22px;
+  font-family: Raleway, Helvetica;
+  font-weight: 500;
+  /*font-style: italic;*/
+  line-height: 1.8;
+  color: black;
+  background:#EDEDED;
+}
+.book_quote::before {
+  /* 
+  Added left double quotation mark, unicode of U+201C (&#x201C)
+  */
+  display: block;
+  content: "\201C";
+  font-family: Helvetica, sans-serif;
+  font-size: 80px;
+  color: #f22987;
+  margin-bottom: -50px;
 }
 
 /* Navigation of book titles in book.html */
