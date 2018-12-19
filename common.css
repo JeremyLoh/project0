@@ -24,15 +24,15 @@ a:hover, button:hover {
 }
 
 /* Index.html styles */
-.spotify_widget {
+.music_widget {
   /* Center the main div */
   display: block;
   text-align: center;
 }
-.spotify_widget iframe {
+.music_widget iframe {
   display: inline-block;
   padding: 2%;
-  margin: 30px;
+  margin: 10px 30px 50px 30px;
   background-color: #EDEDED;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -209,7 +209,7 @@ a:hover, button:hover {
 
 .section_heading {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 45px;
   font-family: 'Open Sans', Helvetica;
   font-weight: 200;
