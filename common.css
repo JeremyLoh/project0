@@ -22,6 +22,9 @@ html, body {
 a:hover, button:hover {
   cursor: pointer;
 }
+img {
+  pointer-events: none;
+}
 
 /* Display picture style */
 #display_picture {
