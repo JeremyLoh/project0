@@ -252,7 +252,8 @@ a:hover, button:hover {
 /* For Small devices */
 @media (max-width: 767px) {
   #display_picture {
-    width: 100%;
+    width: 70%;
+    height: auto;
   }
   .display-1 {
     font-size: 80px;
