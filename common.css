@@ -45,10 +45,11 @@ img {
 .music_widget {
   /* Center the main div */
   display: inline-block;
+  width: 100%;
 }
 .music_widget iframe {
   display: inline-block;
-  padding: 2%;
+  padding: 20px;
   margin: 10px 30px 50px 30px;
   background-color: #EDEDED;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
