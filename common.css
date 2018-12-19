@@ -23,6 +23,18 @@ a:hover, button:hover {
   cursor: pointer;
 }
 
+/* Display picture style */
+#display_picture {
+  /* Center the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Additional styles */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
 /* Index.html styles */
 .music_widget {
   /* Center the main div */
@@ -239,6 +251,9 @@ a:hover, button:hover {
 
 /* For Small devices */
 @media (max-width: 767px) {
+  #display_picture {
+    width: 100%;
+  }
   .display-1 {
     font-size: 80px;
   }
