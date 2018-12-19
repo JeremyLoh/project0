@@ -36,10 +36,12 @@ a:hover, button:hover {
 }
 
 /* Index.html styles */
+.center_div {
+  text-align: center;
+}
 .music_widget {
   /* Center the main div */
-  display: block;
-  text-align: center;
+  display: inline-block;
 }
 .music_widget iframe {
   display: inline-block;
