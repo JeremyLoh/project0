@@ -23,6 +23,32 @@ a:hover, button:hover {
   cursor: pointer;
 }
 
+/* Index.html styles */
+.spotify_widget {
+  /* Center the main div */
+  display: block;
+  text-align: center;
+}
+.spotify_widget iframe {
+  display: inline-block;
+  padding: 2%;
+  margin: 30px;
+  background-color: #EDEDED;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.band_cover {
+  /* Center the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Sizing of image */
+  width: 50%;
+  height: auto;
+  /* Spacing for top and bottom of image */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* General Footer CSS styles */
 #footer {
   position: absolute;
@@ -217,11 +243,18 @@ a:hover, button:hover {
     font-size: 80px;
   }
   .quote blockquote {
-    font-size: 29px;
+    font-size: 28px;
   }
   /* Stack image row on top of one another */
   .image_col {
     flex-basis: 100%;
+  }
+  /* Change font size for smaller screens */
+  .book_quote, .book_summary {
+    font-size: 17px;
+  }
+  #book_list li {
+    font-size: 17px;
   }
 }
 
