@@ -45,11 +45,16 @@ img {
 .music_widget {
   /* Center the main div */
   display: inline-block;
+  text-align: center;
   width: 100%;
 }
 .music_widget iframe {
   display: inline-block;
   padding: 20px;
+  border: 0; 
+  /* For mobile screens (iphone 5) */
+  width: 300px; 
+  height: 300px;
   margin: 10px 30px 50px 30px;
   background-color: #EDEDED;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -103,7 +108,7 @@ img {
   /* Add unicode character for book */
   display: block;
   content: "\1F56E";
-  font-size: 150px;
+  font-size: 100px;
 }
 
 .title {
@@ -171,7 +176,7 @@ img {
 /* Book summary paragraph */
 .book_summary {
   line-height: 2;
-  font-size: 22px;
+  font-size: 17px;
   font-family: 'Open Sans', Helvetica;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -180,7 +185,7 @@ img {
 /* Book quote style */
 .book_quote {
   padding: 0px 30px 40px 30px;
-  font-size: 22px;
+  font-size: 17px;
   font-family: Raleway, Helvetica;
   font-weight: 500;
   /*font-style: italic;*/
@@ -228,7 +233,7 @@ img {
 .section_heading {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 45px;
+  font-size: 25px;
   font-family: 'Open Sans', Helvetica;
   font-weight: 200;
 }
@@ -265,15 +270,11 @@ img {
     font-size: 80px;
   }
   .quote blockquote {
-    font-size: 28px;
+    font-size: 20px;
   }
   /* Stack image row on top of one another */
   .image_col {
     flex-basis: 100%;
-  }
-  /* Change font size for smaller screens */
-  .book_quote, .book_summary {
-    font-size: 17px;
   }
   #book_list li {
     font-size: 17px;
@@ -292,6 +293,13 @@ img {
     width: 40%;
     height: auto;
   }
+  .book_quote, .book_summary {
+    font-size: 24px;
+  }
+  .music_widget iframe {
+    width: 350px; 
+    height: 350px;
+  }
 }
 
 /* For Large devices (laptops/desktops) */
@@ -305,5 +313,12 @@ img {
   .book_cover {
     width: 30%;
     height: auto;
+  }
+  .book_quote, .book_summary {
+    font-size: 26px;
+  }
+  .music_widget iframe {
+    width: 400px; 
+    height: 400px;
   }
 }
