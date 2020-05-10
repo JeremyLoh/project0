@@ -10,7 +10,8 @@ Centering stuff: https://medium.freecodecamp.org/how-to-center-things-with-style
 Color: Monokai theme
   https://color.adobe.com/Monokai-color-theme-1855832/
 */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -18,12 +19,33 @@ html, body {
 #body_content {
   min-height: 100%;
   position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #fafbff,
+    #f3f7ff,
+    #e9f4ff,
+    #def2ff
+  );
 }
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: pointer;
 }
 img {
   pointer-events: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #0a62a4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-link:hover {
+  color: red !important;
 }
 
 /* Display picture style */
@@ -51,12 +73,12 @@ img {
 .music_widget iframe {
   display: inline-block;
   padding: 20px;
-  border: 0; 
+  border: 0;
   /* For mobile screens (iphone 5) */
-  width: 300px; 
+  width: 300px;
   height: 300px;
   margin: 10px 30px 50px 30px;
-  background-color: #EDEDED;
+  background-color: #ededed;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .band_cover {
@@ -76,13 +98,16 @@ img {
 #footer {
   position: absolute;
   left: 0;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   padding-left: 20px;
-  width: 100%; 
+  width: 100%;
+  background-color: #0a62a4;
+  color: white;
 }
 #footer p {
   display: inline-block;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;
@@ -114,28 +139,31 @@ img {
 .title {
   display: inline-block;
   font-weight: 700;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   font-size: 35px;
   padding: 5px 15px 5px 15px;
-  background-color: #A37Ef2;
+  background-color: #a37ef2;
   width: auto;
 }
 
 .author {
   font-weight: 300;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   font-size: 25px;
   position: relative;
   right: -10%;
   color: #252525;
 }
 
-.text_hover:hover, #book_list a:hover {
+.text_hover:hover,
+#book_list a:hover {
   color: #f22987;
 }
 
-#book_1, #book_2, #book_3 {
-  margin: 10%;
+#book_1,
+#book_2,
+#book_3 {
+  padding: 10%;
 }
 /* Format book cover pictures in book.html */
 .book_cover {
@@ -157,12 +185,12 @@ img {
   display: inline-block;
   padding: 0.35em 1.2em;
   width: 100px;
-  border: 0.1em solid #FFFFFF;
+  border: 0.1em solid #ffffff;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   font-weight: 300;
   color: #ffffff;
   background-color: #f22987;
@@ -177,7 +205,7 @@ img {
 .book_summary {
   line-height: 2;
   font-size: 17px;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -191,7 +219,7 @@ img {
   /*font-style: italic;*/
   line-height: 1.8;
   color: black;
-  background:#EDEDED;
+  background: #ededed;
 }
 .book_quote::before {
   /* 
@@ -207,7 +235,7 @@ img {
 
 /* Navigation of book titles in book.html */
 #book_list li {
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   font-size: 25px;
   margin-left: 10%;
   margin-right: 10%;
@@ -234,7 +262,7 @@ img {
   text-align: center;
   margin-bottom: 20px;
   font-size: 25px;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   font-weight: 200;
 }
 
@@ -293,11 +321,12 @@ img {
     width: 40%;
     height: auto;
   }
-  .book_quote, .book_summary {
+  .book_quote,
+  .book_summary {
     font-size: 24px;
   }
   .music_widget iframe {
-    width: 350px; 
+    width: 350px;
     height: 350px;
   }
 }
@@ -314,11 +343,12 @@ img {
     width: 30%;
     height: auto;
   }
-  .book_quote, .book_summary {
+  .book_quote,
+  .book_summary {
     font-size: 26px;
   }
   .music_widget iframe {
-    width: 400px; 
+    width: 400px;
     height: 400px;
   }
 }

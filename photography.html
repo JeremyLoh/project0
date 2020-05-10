@@ -41,25 +41,43 @@
 
   <body>
     <div id="body_content">
-      <!-- Add Bootstrap breadcrumb for navigation of different webpages -->
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="index.html">Home</a>
-          </li>
+      <nav class="navbar navbar-expand-lg navbar-dark header">
+        <a class="navbar-brand" href="index.html">Jeremy Loh</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
 
-          <li class="breadcrumb-item active" aria-current="page">
-            Photography
-          </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="photography.html">Photography</a>
+            </li>
 
-          <li class="breadcrumb-item">
-            <a href="book.html">Book Recommendations</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">Book Recommendations</a>
+            </li>
 
-          <li class="breadcrumb-item">
-            <a href="miscellaneous.html">Miscellaneous Information</a>
-          </li>
-        </ol>
+            <li class="nav-item">
+              <a class="nav-link" href="miscellaneous.html">
+                Miscellaneous Information
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <!-- Add Bootstrap blockquote -->
