@@ -35,14 +35,6 @@ body {
 #body_content {
   min-height: 100%;
   position: relative;
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff,
-    #fafbff,
-    #f3f7ff,
-    #e9f4ff,
-    #def2ff
-  );
 }
 a:hover,
 button:hover {
