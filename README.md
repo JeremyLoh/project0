@@ -5,10 +5,13 @@ This repository contains my website which was built using HTML and CSS.
 The website can be found at https://jeremyloh.github.io/project0/
 
 # Tools used:
+
 1. Bootstrap - https://getbootstrap.com/
 1. Compress Jpeg - https://compressjpeg.com/
+1. Open Source Icons - https://feathericons.com/
 
 # References:
+
 1. Flexbox guide - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 1. Image optimization guide - https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization
 1. CSS custom properties - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
