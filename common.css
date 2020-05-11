@@ -10,6 +10,17 @@ Centering stuff: https://medium.freecodecamp.org/how-to-center-things-with-style
 Color: Monokai theme
   https://color.adobe.com/Monokai-color-theme-1855832/
 */
+/* Declare colour variables */
+:root {
+  --music-shade-one: #4b65b0;
+  --music-shade-two: #7666b7;
+  --music-shade-three: #9c66b9;
+  --music-shade-four: #bf65b4;
+  --music-shade-five: #de65ab;
+  --music-shade-six: #ff7295;
+  --navbar-colour: #0a62a4;
+}
+
 html,
 body {
   margin: 0;
@@ -39,7 +50,7 @@ img {
 .header {
   position: sticky;
   top: 0;
-  background-color: #0a62a4;
+  background-color: var(--navbar-colour);
   padding-top: 5px;
   padding-bottom: 5px;
   z-index: 1;
@@ -62,15 +73,45 @@ img {
   height: 85vh;
 }
 
-/* Index.html styles */
+/* music.html styles */
 .center_div {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.artist_heading {
+  flex-grow: 0; /* do not grow   - initial value: 0 */
+  flex-shrink: 0; /* do not shrink - initial value: 1 */
+  flex-basis: 30%; /* width/height  - initial value: auto */
+  text-align: center;
+  font-size: 60px;
+  font-family: "Open Sans", Helvetica;
+  color: white;
+  font-weight: 200;
+}
+.shade_one {
+  background-color: var(--music-shade-one);
+}
+.shade_two {
+  background-color: var(--music-shade-two);
+}
+.shade_three {
+  background-color: var(--music-shade-three);
+}
+.shade_four {
+  background-color: var(--music-shade-four);
+}
+.shade_five {
+  background-color: var(--music-shade-five);
+}
+.shade_six {
+  background-color: var(--music-shade-six);
 }
 .music_widget {
-  /* Center the main div */
-  display: inline-block;
-  text-align: center;
   width: 100%;
+  vertical-align: center;
 }
 .music_widget iframe {
   display: inline-block;
@@ -79,21 +120,9 @@ img {
   /* For mobile screens (iphone 5) */
   width: 300px;
   height: 300px;
-  margin: 10px 30px 50px 30px;
+  margin: 30px 30px 30px 30px;
   background-color: #ededed;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.band_cover {
-  /* Center the image */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* Sizing of image */
-  width: 50%;
-  height: auto;
-  /* Spacing for top and bottom of image */
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /* General Footer CSS styles */
@@ -104,7 +133,7 @@ img {
   padding-bottom: 5px;
   padding-left: 20px;
   width: 100%;
-  background-color: #0a62a4;
+  background-color: var(--navbar-colour);
   color: white;
 }
 #footer p {
@@ -312,6 +341,17 @@ img {
   }
   .quote blockquote {
     font-size: 20px;
+  }
+  /* Album style */
+  .center_div {
+    flex-wrap: wrap;
+  }
+  .artist_heading {
+    flex-basis: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
   }
   /* Stack image row on top of one another */
   .image_col {
