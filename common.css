@@ -28,6 +28,10 @@ body {
   padding: 0;
   height: 100%;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 #body_content {
   min-height: 100%;
   position: relative;
@@ -131,11 +135,9 @@ img {
 
 /* General Footer CSS styles */
 #footer {
-  position: absolute;
-  left: 0;
+  margin-top: auto;
   padding-top: 10px;
   padding-bottom: 5px;
-  padding-left: 20px;
   width: 100%;
   background-color: var(--navbar-colour);
   color: white;
