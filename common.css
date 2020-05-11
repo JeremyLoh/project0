@@ -158,13 +158,10 @@ img {
 }
 
 /* book.html styles */
-.book_recommendation::before {
-  /* Add unicode character for book */
-  display: block;
-  content: "\1F56E";
-  font-size: 100px;
+.icon {
+  height: 10vh;
+  width: auto;
 }
-
 .title {
   display: inline-block;
   font-weight: 700;
