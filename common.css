@@ -42,6 +42,7 @@ img {
   background-color: #0a62a4;
   padding-top: 5px;
   padding-bottom: 5px;
+  z-index: 1;
 }
 
 .nav-link:hover {
@@ -57,7 +58,8 @@ img {
   /* Additional styles */
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 50%;
+  width: auto;
+  height: 85vh;
 }
 
 /* Index.html styles */
@@ -261,6 +263,7 @@ img {
 .section_heading {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
   font-size: 25px;
   font-family: "Open Sans", Helvetica;
   font-weight: 200;
@@ -286,6 +289,15 @@ img {
 .image_col {
   margin-bottom: 5%;
   flex-basis: 45%;
+  z-index: auto;
+}
+
+.image_col:hover {
+  filter: url(grayscale_filter.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
 }
 
 /* For Small devices */
@@ -303,6 +315,7 @@ img {
   /* Stack image row on top of one another */
   .image_col {
     flex-basis: 100%;
+    margin-bottom: 0px;
   }
   #book_list li {
     font-size: 17px;
