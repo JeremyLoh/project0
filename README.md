@@ -1,5 +1,16 @@
-# Project 0
+# Project 0: My Website
 
-Web Programming with Python and JavaScript
-https://docs.cs50.net/web/2018/x/projects/0/project0.html
-https://cs50.github.io/web/2018/spring/projects/0
+This repository contains my website which was built using HTML and CSS.
+
+The website can be found at https://jeremyloh.github.io/project0/
+
+# Tools used:
+1. Bootstrap - https://getbootstrap.com/
+1. Compress Jpeg - https://compressjpeg.com/
+
+# References:
+1. Flexbox guide - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+1. Image optimization guide - https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization
+1. CSS custom properties - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+1. Material Design: The Type Scale - https://material.io/design/typography/the-type-system.html#type-scale
+1. Z-index - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
