@@ -305,6 +305,7 @@ img {
   #display_picture {
     width: 100%;
     height: auto;
+    margin-top: 0px;
   }
   .display-1 {
     font-size: 80px;
@@ -316,6 +317,9 @@ img {
   .image_col {
     flex-basis: 100%;
     margin-bottom: 0px;
+  }
+  .image_col:hover {
+    filter: none;
   }
   #book_list li {
     font-size: 17px;
