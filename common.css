@@ -319,6 +319,11 @@ img {
   margin-bottom: 5%;
   flex-basis: 45%;
   z-index: auto;
+  text-align: center;
+}
+.image_col img {
+  max-width: 100%;
+  max-height: 90vh;
 }
 
 .image_col:hover {
@@ -357,6 +362,7 @@ img {
   .image_col {
     flex-basis: 100%;
     margin-bottom: 0px;
+    text-align: center;
   }
   .image_col:hover {
     filter: none;
