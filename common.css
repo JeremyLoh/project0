@@ -326,7 +326,30 @@ img {
 }
 
 /* For Small devices */
-@media (max-width: 767px) {
+@media (max-width: 767px) and (orientation: landscape) {
+  .image_col {
+    flex-basis: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+    max-height: 100vh;
+    max-width: auto;
+  }
+  .image_col:hover {
+    filter: none;
+  }
+  .book_cover {
+    width: auto;
+    height: 90vh;
+  }
+  #display_picture {
+    width: auto;
+    height: 90vh;
+    margin-top: 0;
+  }
+}
+
+/* For Small devices */
+@media (max-width: 767px) and (orientation: portrait) {
   #display_picture {
     width: 100%;
     height: auto;
