@@ -90,6 +90,7 @@ img {
   font-family: "Open Sans", Helvetica, Arial;
 }
 .movie_description h1 {
+  padding-top: 0.5em;
   font-size: 60px;
   color: var(--navbar-colour);
 }
@@ -100,7 +101,12 @@ img {
 .movie_screenshot {
   flex-grow: 0; /* do not grow   - initial value: 0 */
   flex-shrink: 0; /* do not shrink - initial value: 1 */
-  flex-basis: 100%; /* width/height  - initial value: auto */
+  flex-basis: 50%; /* width/height  - initial value: auto */
+}
+.movie_divider {
+  background-color: var(--navbar-colour);
+  height: 5vh;
+  width: 100vw;
 }
 
 /* music.html styles */
@@ -426,6 +432,11 @@ img {
   }
   .movie_description p {
     font-size: 16px;
+  }
+  .movie_screenshot {
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: 100%; /* width/height  - initial value: auto */
   }
   #display_picture {
     width: 100%;
