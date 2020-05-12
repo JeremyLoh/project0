@@ -12,6 +12,8 @@ Color: Monokai theme
 */
 /* Declare colour variables */
 :root {
+  font-family: "Open Sans", Helvetica, Arial;
+  --book-quote-font-family: Raleway, Helvetica, Arial;
   --music-shade-one: #4b65b0;
   --music-shade-two: #7666b7;
   --music-shade-three: #9c66b9;
@@ -20,7 +22,7 @@ Color: Monokai theme
   --music-shade-six: #ff7295;
   --music-shade-seven: #e17454;
   --music-shade-eight: #da6077;
-  --navbar-colour: #0a62a4;
+  --primary-colour: #0a62a4;
 }
 
 html,
@@ -28,10 +30,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/* body {
-  display: flex;
-  flex-direction: column;
-} */
 #body_content {
   min-height: 90vh;
   position: relative;
@@ -47,7 +45,7 @@ img {
 .header {
   position: sticky;
   top: 0;
-  background-color: var(--navbar-colour);
+  background-color: var(--primary-colour);
   padding-top: 5px;
   padding-bottom: 5px;
   z-index: 1;
@@ -88,12 +86,11 @@ img {
   flex-basis: 40%; /* width/height  - initial value: auto */
   padding-left: 2em;
   padding-right: 2em;
-  font-family: "Open Sans", Helvetica, Arial;
 }
 .movie_description h1 {
   padding-top: 0.5em;
   font-size: 60px;
-  color: var(--navbar-colour);
+  color: var(--primary-colour);
 }
 .movie_description p {
   font-size: 20px;
@@ -105,7 +102,7 @@ img {
   flex-basis: 50%; /* width/height  - initial value: auto */
 }
 .movie_divider {
-  background-color: var(--navbar-colour);
+  background-color: var(--primary-colour);
   height: 5vh;
   width: 100vw;
 }
@@ -124,7 +121,6 @@ img {
   flex-basis: 30%; /* width/height  - initial value: auto */
   text-align: center;
   font-size: 60px;
-  font-family: "Open Sans", Helvetica, Arial;
   color: white;
   font-weight: 200;
 }
@@ -173,7 +169,7 @@ img {
   margin-top: auto;
   width: 100%;
   height: 10vh;
-  background-color: var(--navbar-colour);
+  background-color: var(--primary-colour);
   color: white;
   display: flex;
   justify-content: center;
@@ -181,7 +177,6 @@ img {
 }
 #footer p {
   display: inline-block;
-  font-family: "Open Sans", Helvetica, Arial;
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;
@@ -204,8 +199,7 @@ img {
 }
 .title {
   display: inline-block;
-  font-weight: 700;
-  font-family: "Open Sans", Helvetica, Arial;
+  font-weight: 600;
   font-size: 35px;
   padding: 5px 15px 5px 15px;
   background-color: #a37ef2;
@@ -213,8 +207,7 @@ img {
 }
 
 .author {
-  font-weight: 300;
-  font-family: "Open Sans", Helvetica, Arial;
+  font-weight: 400;
   font-size: 25px;
   position: relative;
   right: -10%;
@@ -257,7 +250,6 @@ img {
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Open Sans", Helvetica, Arial;
   font-weight: 300;
   color: #ffffff;
   background-color: #f22987;
@@ -272,7 +264,6 @@ img {
 .book_summary {
   line-height: 2;
   font-size: 17px;
-  font-family: "Open Sans", Helvetica, Arial;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -287,7 +278,7 @@ img {
 .book_quote {
   padding: 0px 30px 40px 30px;
   font-size: 17px;
-  font-family: Raleway, Helvetica, Arial;
+  font-family: var(--book-quote-font-family);
   font-weight: 500;
   /*font-style: italic;*/
   line-height: 1.8;
@@ -300,7 +291,6 @@ img {
   */
   display: block;
   content: "\201C";
-  font-family: Helvetica, sans-serif, Arial;
   font-size: 80px;
   color: #f22987;
   margin-bottom: -50px;
@@ -308,7 +298,6 @@ img {
 
 /* Navigation of book titles in book.html */
 #book_list li {
-  font-family: "Open Sans", Helvetica, Arial;
   font-size: 25px;
   margin-left: 10%;
   margin-right: 10%;
@@ -336,7 +325,6 @@ img {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 25px;
-  font-family: "Open Sans", Helvetica, Arial;
   font-weight: 200;
 }
 
