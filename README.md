@@ -7,7 +7,8 @@ The website can be found at https://jeremyloh.github.io/project0/
 # Tools used:
 
 1. Bootstrap - https://getbootstrap.com/
-1. Compress Jpeg - https://compressjpeg.com/
+1. Compress JPEG - https://compressjpeg.com/
+1. Compress GIF - https://gifcompressor.com/
 1. Open Source Icons - https://feathericons.com/
 1. PageSpeed Insights - https://developers.google.com/speed/pagespeed/insights/
 
