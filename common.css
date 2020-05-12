@@ -113,7 +113,7 @@ img {
 .movie_divider {
   background-color: var(--primary-colour);
   height: 5vh;
-  width: 100vw;
+  width: 100%;
 }
 
 /* music.html styles */
