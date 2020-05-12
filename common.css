@@ -184,7 +184,8 @@ img {
 
 #book_1,
 #book_2,
-#book_3 {
+#book_3,
+#book_4 {
   padding: 10%;
 }
 /* Format book cover pictures in book.html */
@@ -232,6 +233,12 @@ img {
   margin-bottom: 30px;
 }
 
+.book_quote_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 /* Book quote style */
 .book_quote {
   padding: 0px 30px 40px 30px;
@@ -261,7 +268,7 @@ img {
   font-size: 25px;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 5%;
+  padding-bottom: 5vh;
 }
 
 #book_list li:hover {
