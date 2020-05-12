@@ -69,6 +69,40 @@ img {
   height: 85vh;
 }
 
+/* movie.html styles */
+.movie_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.movie_title {
+  flex-grow: 0; /* do not grow   - initial value: 0 */
+  flex-shrink: 0; /* do not shrink - initial value: 1 */
+  flex-basis: 60%; /* width/height  - initial value: auto */
+  height: inherit;
+}
+.movie_description {
+  flex-grow: 0; /* do not grow   - initial value: 0 */
+  flex-shrink: 0; /* do not shrink - initial value: 1 */
+  flex-basis: 40%; /* width/height  - initial value: auto */
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+.movie_description h1 {
+  font-size: 60px;
+  color: var(--navbar-colour);
+}
+.movie_description p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.movie_screenshot {
+  flex-grow: 0; /* do not grow   - initial value: 0 */
+  flex-shrink: 0; /* do not shrink - initial value: 1 */
+  flex-basis: 100%; /* width/height  - initial value: auto */
+}
+
 /* music.html styles */
 .center_div {
   text-align: center;
@@ -83,7 +117,7 @@ img {
   flex-basis: 30%; /* width/height  - initial value: auto */
   text-align: center;
   font-size: 60px;
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   color: white;
   font-weight: 200;
 }
@@ -137,7 +171,7 @@ img {
 }
 #footer p {
   display: inline-block;
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;
@@ -161,7 +195,7 @@ img {
 .title {
   display: inline-block;
   font-weight: 700;
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   font-size: 35px;
   padding: 5px 15px 5px 15px;
   background-color: #a37ef2;
@@ -170,7 +204,7 @@ img {
 
 .author {
   font-weight: 300;
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   font-size: 25px;
   position: relative;
   right: -10%;
@@ -213,7 +247,7 @@ img {
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   font-weight: 300;
   color: #ffffff;
   background-color: #f22987;
@@ -228,7 +262,7 @@ img {
 .book_summary {
   line-height: 2;
   font-size: 17px;
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -243,7 +277,7 @@ img {
 .book_quote {
   padding: 0px 30px 40px 30px;
   font-size: 17px;
-  font-family: Raleway, Helvetica;
+  font-family: Raleway, Helvetica, Arial;
   font-weight: 500;
   /*font-style: italic;*/
   line-height: 1.8;
@@ -256,7 +290,7 @@ img {
   */
   display: block;
   content: "\201C";
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif, Arial;
   font-size: 80px;
   color: #f22987;
   margin-bottom: -50px;
@@ -264,7 +298,7 @@ img {
 
 /* Navigation of book titles in book.html */
 #book_list li {
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   font-size: 25px;
   margin-left: 10%;
   margin-right: 10%;
@@ -292,7 +326,7 @@ img {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 25px;
-  font-family: "Open Sans", Helvetica;
+  font-family: "Open Sans", Helvetica, Arial;
   font-weight: 200;
 }
 
@@ -334,6 +368,24 @@ img {
 
 /* For Small devices */
 @media (max-width: 767px) and (orientation: landscape) {
+  .movie_title {
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: 100%; /* width/height  - initial value: auto */
+  }
+  .movie_title,
+  .movie_description {
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: 100%; /* width/height  - initial value: auto */
+  }
+  .movie_description h1 {
+    font-size: 20px;
+    margin-top: 1em;
+  }
+  .movie_description p {
+    font-size: 16px;
+  }
   .image_col {
     flex-basis: 100%;
     margin-bottom: 0px;
@@ -357,6 +409,24 @@ img {
 
 /* For Small devices */
 @media (max-width: 767px) and (orientation: portrait) {
+  .movie_title {
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: 100%; /* width/height  - initial value: auto */
+  }
+  .movie_title,
+  .movie_description {
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: 100%; /* width/height  - initial value: auto */
+  }
+  .movie_description h1 {
+    font-size: 20px;
+    margin-top: 1em;
+  }
+  .movie_description p {
+    font-size: 16px;
+  }
   #display_picture {
     width: 100%;
     height: auto;
@@ -394,7 +464,25 @@ img {
 }
 
 /* For Medium devices */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .movie_title {
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: 100%; /* width/height  - initial value: auto */
+  }
+  .movie_title,
+  .movie_description {
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: 100%; /* width/height  - initial value: auto */
+  }
+  .movie_description h1 {
+    font-size: 20px;
+    margin-top: 1em;
+  }
+  .movie_description p {
+    font-size: 16px;
+  }
   .quote blockquote {
     font-size: 35px;
   }
