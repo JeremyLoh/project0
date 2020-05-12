@@ -19,6 +19,7 @@ Color: Monokai theme
   --music-shade-five: #de65ab;
   --music-shade-six: #ff7295;
   --music-shade-seven: #e17454;
+  --music-shade-eight: #da6077;
   --navbar-colour: #0a62a4;
 }
 
@@ -147,6 +148,9 @@ img {
 }
 .shade_seven {
   background-color: var(--music-shade-seven);
+}
+.shade_eight {
+  background-color: var(--music-shade-eight);
 }
 .music_widget {
   width: 100%;
