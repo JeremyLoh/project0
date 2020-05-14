@@ -11,6 +11,7 @@ The website can be found at https://jeremyloh.github.io/project0/
 1. Compress GIF - https://gifcompressor.com/
 1. Open Source Icons - https://feathericons.com/
 1. PageSpeed Insights - https://developers.google.com/speed/pagespeed/insights/
+1. PicResize - https://picresize.com/
 
 # References:
 
