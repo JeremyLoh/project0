@@ -21,3 +21,4 @@ The website can be found at https://jeremyloh.github.io/project0/
 1. CSS custom properties - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 1. Material Design: The Type Scale - https://material.io/design/typography/the-type-system.html#type-scale
 1. Z-index - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+1. Ensure text remains visible during webfont load - https://web.dev/font-display/?utm_source=lighthouse&utm_medium=unknown
